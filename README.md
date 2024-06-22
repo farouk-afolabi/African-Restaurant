@@ -56,9 +56,9 @@ This project is licensed under the MIT License.
  ## Author
 Farouk Afolabi
 
-## Student No: 
+## Student No 
 1207660
 
 
-## Date: 
+## Date 
 April 5th, 2024
