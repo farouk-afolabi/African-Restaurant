@@ -1,5 +1,5 @@
 # African-Restaurant
-This project is a simple web application for an African restaurant. It showcases various African food items, allowing users to view item details, add items to their cart, review items, and checkout. 
+This project is a simple web application for an African restaurant. It showcases 15 different meals and African food items, allowing users to view item details, add items to their cart, review items, and checkout. 
 
 ## Table of Contents
 - [Project Description](#project-description)
