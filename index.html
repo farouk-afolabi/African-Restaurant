@@ -1,0 +1,107 @@
+<!--
+      Name: Farouk Afolabi
+      Project: Final Project 
+      Student No: 1207660
+      Date: April 5th 2024
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>African Restaurant</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <h1>African Food Store</h1>
+    <span id="dateArea" style="float: right">Date/Time</span>
+    <br />
+    <span style="float: right">
+      Currency:
+      <img class="currencyFlag" src="" />
+      <select id="currencySelector">
+        <option selected value="CAD">CAD</option>
+        <option value="NGN">NGN</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+      </select>
+    </span>
+    <br />
+    <fieldset>
+      <legend>Store Items</legend>
+      <select id="displayFilter">
+        <option>All</option>
+      </select>
+      <br />
+      <span
+        ><strong
+          >| ID | Product Name | Price | Qty | Max | Category | Cost of Shipping
+          | Description | Image |</strong
+        ></span
+      >
+      <div id="inventoryOutput"></div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Item Details</legend>
+
+      <div id="itemDetails"></div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Select Items</legend>
+      <p>
+        Item ID: <input type="text" id="addItemId" />
+        &nbsp;
+        <span id="addIDValidationMessage"></span>
+      </p>
+      <p>
+        Qty: <input type="number" id="addItemQty" />
+        &nbsp;
+        <span id="addQtyValidationMessage"></span>
+      </p>
+      <p>
+        <input
+          type="button"
+          value="Item Details "
+          onclick="displayItemDetails()"
+        />
+        <input
+          type="button"
+          value="Add Item"
+          id="addButton"
+          onclick="addToCart()"
+        />
+        <input type="button" value="Remove Item" onclick="removeFromCart()" />
+      </p>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Your Cart</legend>
+      <span><strong>| ID | Price | Qty | Shipping |</strong></span>
+      <br />
+      <div id="cartOutput"></div>
+      <br />
+      <div id="cartCheckout"></div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Review an Item</legend>
+      <p>
+        Product ID: <input type="text" id="reviewId" />&nbsp;<span
+          id="reviewIdMsg"
+        ></span>
+      </p>
+      <p>Review: <input type="text" id="reviewDesc" size="100" /></p>
+      <p>
+        Rating:
+        <input type="number" id="reviewNum" min="0" max="5" />&nbsp;<span
+          id="addRatingValidationMessage"
+        ></span>
+      </p>
+      <p><input type="button" value="Review" onclick="reviewItem()" /></p>
+    </fieldset>
+
+    <!-- Javascript -->
+    <script src="main.js"> </script>
+  </body>
+</html>
